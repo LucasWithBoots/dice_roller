@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class GradientContainer extends StatelessWidget {
   final Color color1;
@@ -25,6 +26,7 @@ class GradientContainer extends StatelessWidget {
               'assets/images/dice-1.png',
               width: 200,
             ),
+            const Gap(20),
             TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(foregroundColor: Colors.white),
