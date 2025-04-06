@@ -11,11 +11,25 @@ class GradientContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return (Container(
         decoration: BoxDecoration(
-      gradient: LinearGradient(
-        colors: [color1, color2],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      ),
-    )));
+          gradient: LinearGradient(
+            colors: [color1, color2],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Center(
+            child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/dice-1.png',
+              width: 200,
+            ),
+            TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(foregroundColor: Colors.white),
+                child: const Text("Roll it"))
+          ],
+        ))));
   }
 }
