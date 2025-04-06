@@ -1,3 +1,4 @@
+import 'package:dice_roller/gradient_container.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+          body: GradientContainer(
+              color1: Colors.deepPurple, color2: Colors.purple)),
     );
   }
 }
